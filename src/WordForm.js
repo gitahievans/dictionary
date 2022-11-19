@@ -25,9 +25,8 @@ function WordForm({ onHandleUpdate }) {
         value={word}
         onChange={handleSearch}
       />
-      <button id="searcher">
-        <img src={search} alt="Search" />
-      </button>
+
+      <img src={search} alt="Search" />
     </form>
   );
 }

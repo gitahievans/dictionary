@@ -1,5 +1,5 @@
 import React from "react";
-import { css } from "./App.css";
+import "./App.css";
 import WordForm from "./WordForm";
 import ResultsPage from "./ResultsPage.js";
 import { useState } from "react";
@@ -24,7 +24,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>Simple Dictionary</h1>
       <WordForm onHandleUpdate={handleUpdateResults} />
       <ResultsPage
