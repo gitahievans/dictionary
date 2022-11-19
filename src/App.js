@@ -18,7 +18,6 @@ function App() {
 
     setSearchedWord(wordData[0].word);
     console.log(searchedWord);
-    // setDetails(wordData[0].meanings[0].definitions[0].antonyms);
     setExample(wordData[0].meanings[0].definitions[0].example);
     setMeaning(wordData[0].meanings[0].definitions[0].definition);
   }

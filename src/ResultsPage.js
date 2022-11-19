@@ -1,20 +1,19 @@
+import { Grid } from "@mui/material";
 import React from "react";
 
-function ResultsPage({ ourWord, example, meaning }) {
+function ResultsPage({ ourWord, example, meaning, wordData }) {
   return (
     <div className="results">
-      <div className="word-searched">
-        <h4>Word:</h4>
-        {ourWord}
+      <div className="word">
+        {wordData ? <span className="tags">You searched for: </span> : null}
+        {ourWord.toUpperCase()}
       </div>
-
-      <div className="word-meaning">
-        <h4>Definition:</h4>
+      <div className="mean">
+        {wordData ? <span className="tags">Meaning: </span> : null}
         {meaning}
       </div>
-
-      <div className="example">
-        <h4>Example:</h4>
+      <div className="eg">
+        {wordData ? <span className="tags">Example: </span> : null}
         {example}
       </div>
     </div>
