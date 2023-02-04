@@ -1,18 +1,17 @@
 * {
     font-family: 'Lucida Sans';
-
+margin: 0;
 }
 
+
 .container {
-    height: 50vh;
-    width: 50vw;
-    margin: 20%;
+    height: 100vh;
+    width: 100vw;
     background: linear-gradient(-55deg, rgba(57, 71, 210, 0.7970779376203606) 30%, rgba(84, 40, 156, 0.7018398423822654) 71%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: 20px;
     color: white;
 }
 
@@ -31,6 +30,10 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 40%;
+}
+
+.results:hover {
+    display: none;
 }
 
 .word,
