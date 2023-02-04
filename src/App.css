@@ -32,7 +32,9 @@
     display: flex;
     justify-content: space-around;
 }
-
+.form Button{
+    width: 25%;
+}
 .results {
     display: flex;
     flex-direction: column;
