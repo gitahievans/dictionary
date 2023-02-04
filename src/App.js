@@ -24,15 +24,17 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Simple Dictionary</h1>
-      <WordForm onHandleUpdate={handleUpdateResults} />
-      <ResultsPage
-        wordData={wordResults}
-        ourWord={searchedWord}
-        details={wordDetails}
-        example={wordExample}
-        meaning={wordMeaning}
-      />
+      <div className="sub-cont">
+        <h1>Simple Dictionary</h1>
+        <WordForm onHandleUpdate={handleUpdateResults} />
+        <ResultsPage
+          wordData={wordResults}
+          ourWord={searchedWord}
+          details={wordDetails}
+          example={wordExample}
+          meaning={wordMeaning}
+        />
+      </div>
     </div>
   );
 }

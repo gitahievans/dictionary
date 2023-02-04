@@ -7,34 +7,25 @@ margin: 0;
 .container {
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(-55deg, rgba(57, 71, 210, 0.7970779376203606) 30%, rgba(84, 40, 156, 0.7018398423822654) 71%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    color: white;
+    justify-content: center;
 }
-
-.container h1 {
-    margin-top: 0px;
-}
-
-/* word form */
-.form {
-    width: fit-content;
+.sub-cont{
+    height: 50%;
+    width: 30%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .results {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    max-width: 40%;
 }
 
-.results:hover {
-    display: none;
-}
 
 .word,
 .mean,
@@ -43,10 +34,10 @@ margin: 0;
 }
 
 .word {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .tags {
-    color: rgb(54, 19, 77);
+    color: rgb(0, 217, 255);
     font-size: 17px;
 }
