@@ -1,4 +1,3 @@
-import { Grid } from "@mui/material";
 import React from "react";
 import Voice from "./Voice";
 
@@ -18,7 +17,7 @@ function ResultsPage({ ourWord, example, meaning, wordData }) {
         {wordData ? <span className="tags">Example: </span> : null}
         {example}
       </div>
-      <Voice/>
+      <Voice wordData={wordData}/>
     </div>
   );
 }

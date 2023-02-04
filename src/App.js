@@ -6,7 +6,6 @@ import { useState } from "react";
 
 function App() {
   const [wordResults, setWordResults] = useState("");
-
   const [searchedWord, setSearchedWord] = useState(" ");
   const [wordDetails, setDetails] = useState(" ");
   const [wordExample, setExample] = useState(" ");
@@ -14,7 +13,6 @@ function App() {
 
   function handleUpdateResults(wordData) {
     setWordResults(wordData);
-    console.log(wordData);
 
     setSearchedWord(wordData[0].word);
     console.log(searchedWord);
