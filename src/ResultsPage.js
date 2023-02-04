@@ -1,13 +1,11 @@
 import React from "react";
 import Voice from "./Voice";
 
-
 function ResultsPage({ ourWord, example, meaning, wordData }) {
   return (
     <div className="results">
       <div className="word">
-        {wordData ? <span className="tags">You searched for: </span> : null}
-        {ourWord.toUpperCase()}
+        {wordData ? <p>{ourWord.toUpperCase()}</p> : null}
       </div>
       <div className="mean">
         {wordData ? <span className="tags">Meaning: </span> : null}
@@ -17,7 +15,11 @@ function ResultsPage({ ourWord, example, meaning, wordData }) {
         {wordData ? <span className="tags">Example: </span> : null}
         {example}
       </div>
-      <Voice wordData={wordData}/>
+      {wordData ? (
+        <div className="voice">
+          <Voice wordData={wordData} />{" "}
+        </div>
+      ) : null}
     </div>
   );
 }

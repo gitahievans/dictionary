@@ -23,7 +23,9 @@ function App() {
   return (
     <div className="container">
       <div className="sub-cont">
-        <h1>Simple Dictionary</h1>
+        <div>
+          <h1>Simple Dictionary</h1>
+        </div>
         <WordForm onHandleUpdate={handleUpdateResults} />
         <ResultsPage
           wordData={wordResults}

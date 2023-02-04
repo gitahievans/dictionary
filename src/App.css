@@ -1,6 +1,6 @@
 * {
     font-family: 'Lucida Sans';
-margin: 0;
+    margin: 0;
 }
 
 
@@ -12,24 +12,40 @@ margin: 0;
     align-items: center;
     justify-content: center;
 }
-.sub-cont{
-    height: 50%;
-    width: 30%;
+
+.sub-cont {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background: radial-gradient(circle, rgba(0, 66, 119, 0.929) 21%, rgb(0, 79, 82) 93%);
+}
+
+.sub-cont h1 {
+    color: aliceblue;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .results {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 90%;
+    color: white;
 }
-
 
 .word,
 .mean,
-.eg {
+.eg,
+.voice {
     margin: 4%;
 }
 
@@ -37,7 +53,41 @@ margin: 0;
     font-size: 15px;
 }
 
+.sbar {
+    width: 70%;
+    background-color: aliceblue;
+}
+
 .tags {
-    color: rgb(0, 217, 255);
+    color: rgb(0, 0, 0);
     font-size: 17px;
+}
+
+.voice {
+    display: flex;
+}
+
+.voice Button {
+    margin-left: 2%;
+}
+
+@media screen and (min-width:768px) {
+
+    .word,
+    .mean,
+    .eg,
+    .voice,
+    .tags {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .results {
+        height: 62%;
+        width: 50%;
+    }
+    .form{
+        width: 70%;
+    }
 }

@@ -16,15 +16,16 @@ function WordForm({ onHandleUpdate }) {
       .then((response) => response.json())
       .then((wordData) => {
         onHandleUpdate(wordData);
+        setWord(" ");
       });
   }
 
   return (
     <form className="form" onSubmit={handleSubmit}>
       <TextField
+        className="sbar"
         id="outlined-basic"
         label="Search"
-        variant="standard"
         type="text"
         onChange={handleSearch}
       />
