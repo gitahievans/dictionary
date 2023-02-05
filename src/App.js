@@ -7,15 +7,15 @@ import { useState } from "react";
 function App() {
   const [wordResults, setWordResults] = useState("");
   const [searchedWord, setSearchedWord] = useState(" ");
-  const [wordDetails, setDetails] = useState(" ");
+  const [phonetic, setPhonetic] = useState("")
   const [wordExample, setExample] = useState(" ");
   const [wordMeaning, setMeaning] = useState(" ");
 
   function handleUpdateResults(wordData) {
     setWordResults(wordData);
-
     setSearchedWord(wordData[0].word);
-    console.log(searchedWord);
+    setPhonetic(wordData[0].phonetic);
+    console.log(phonetic);
     setExample(wordData[0].meanings[0].definitions[0].example);
     setMeaning(wordData[0].meanings[0].definitions[0].definition);
   }
@@ -30,9 +30,9 @@ function App() {
         <ResultsPage
           wordData={wordResults}
           ourWord={searchedWord}
-          details={wordDetails}
           example={wordExample}
           meaning={wordMeaning}
+          phonetic = {phonetic}
         />
       </div>
     </div>

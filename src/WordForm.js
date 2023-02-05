@@ -15,10 +15,11 @@ function WordForm({ onHandleUpdate }) {
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
       .then((response) => response.json())
       .then((wordData) => {
+        // console.log(wordData[0])
         onHandleUpdate(wordData);
-        setWord(" ");
       });
   }
+
 
   return (
     <form className="form" onSubmit={handleSubmit}>
