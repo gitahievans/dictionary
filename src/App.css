@@ -27,9 +27,11 @@
     display: flex;
     justify-content: space-around;
 }
-.form Button{
+
+.form Button {
     width: 25%;
 }
+
 .results {
     display: flex;
     flex-direction: column;
@@ -42,11 +44,13 @@
 .word,
 .mean,
 .eg,
-.voice, .phonetic {
+.voice,
+.phonetic {
     margin: 4%;
     font-weight: 100;
 }
-.res{
+
+.res {
     font-weight: 100;
 }
 
@@ -72,17 +76,19 @@
     margin-left: 2%;
 }
 
-.sorry{
+.sorry {
     margin: 3%;
     font-size: 20px;
     font-weight: 600;
 }
-.nfound{
+
+.nfound {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.nfound img{
+
+.nfound img {
     height: 100px;
     width: 100px;
 }
@@ -103,7 +109,21 @@
         height: 62%;
         width: 50%;
     }
-    .form{
+
+    .form {
         width: 70%;
     }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+}
+.nfound img {
+    animation: rotate 2s linear infinite;
 }

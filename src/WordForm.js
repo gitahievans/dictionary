@@ -17,7 +17,8 @@ function WordForm({ onHandleUpdate }) {
       .then((wordData) => {
         console.log(wordData)
         onHandleUpdate(wordData);
-      });
+      });  
+      setWord("");
   }
 
 
@@ -26,8 +27,9 @@ function WordForm({ onHandleUpdate }) {
       <TextField
         className="sbar"
         id="outlined-basic"
-        label="Search"
         type="text"
+        value={word}
+        placeholder="Search for English words"
         onChange={handleSearch}
       />
       <Button color="primary" variant="contained" type="submit">
