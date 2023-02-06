@@ -29,7 +29,6 @@ function WordForm({ onHandleUpdate }) {
         id="outlined-basic"
         type="text"
         value={word}
-        placeholder="Search for English words"
         onChange={handleSearch}
       />
       <Button color="primary" variant="contained" type="submit">

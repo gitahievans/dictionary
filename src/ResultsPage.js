@@ -1,8 +1,8 @@
 import React from "react";
 import Voice from "./Voice";
 
+
 function ResultsPage({ phonetic, ourWord, example, meaning, wordData }) {
- console.log(wordData.title)
   return (
     <>
       {wordData.title ? (
@@ -29,11 +29,15 @@ function ResultsPage({ phonetic, ourWord, example, meaning, wordData }) {
           </div>
           <div className="eg">
             {wordData ? <span className="tags">Example: </span> : null}
-            <span className="res">{example}</span>
+            {example ? (
+              <span className="res">{example}</span>
+            ) : (
+              <span className="noeg">None given</span>
+            )}
           </div>
           {wordData ? (
             <div className="voice">
-              <Voice wordData={wordData} />{" "}
+              <Voice wordData={wordData} />
             </div>
           ) : null}
         </div>

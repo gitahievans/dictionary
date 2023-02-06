@@ -3,6 +3,7 @@ import "./App.css";
 import WordForm from "./WordForm";
 import ResultsPage from "./ResultsPage.js";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 function App() {
   const [wordResults, setWordResults] = useState("");
@@ -32,9 +33,10 @@ function App() {
           ourWord={searchedWord}
           example={wordExample}
           meaning={wordMeaning}
-          phonetic = {phonetic}
+          phonetic={phonetic}
         />
       </div>
+      <ToastContainer />
     </div>
   );
 }
