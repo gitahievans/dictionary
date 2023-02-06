@@ -15,7 +15,7 @@ function WordForm({ onHandleUpdate }) {
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
       .then((response) => response.json())
       .then((wordData) => {
-        // console.log(wordData[0])
+        console.log(wordData)
         onHandleUpdate(wordData);
       });
   }

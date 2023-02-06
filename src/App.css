@@ -1,5 +1,4 @@
 * {
-    font-family: 'Lucida Sans';
     margin: 0;
 }
 
@@ -20,11 +19,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: radial-gradient(circle, rgba(0, 88, 159, 0.929) 21%, rgb(0, 53, 54) 93%);
-}
-
-.sub-cont h1 {
-    color: aliceblue;
+    background-color: aliceblue;
 }
 
 .form {
@@ -41,7 +36,7 @@
     justify-content: space-evenly;
     height: 40%;
     width: 90%;
-    color: white;
+    color: black;
 }
 
 .word,
@@ -49,6 +44,10 @@
 .eg,
 .voice, .phonetic {
     margin: 4%;
+    font-weight: 100;
+}
+.res{
+    font-weight: 100;
 }
 
 
@@ -62,7 +61,6 @@
 }
 
 .tags {
-    color: rgb(255, 204, 0);
     font-size: 17px;
 }
 
