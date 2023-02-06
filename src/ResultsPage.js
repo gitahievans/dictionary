@@ -6,8 +6,12 @@ function ResultsPage({ phonetic, ourWord, example, meaning, wordData }) {
   return (
     <>
       {wordData.title ? (
-        <div>
-          <p className="nfound">{wordData.message}</p>
+        <div className="nfound">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/3350/3350122.png"
+            alt="not found"
+          />
+          <p className="sorry">{wordData.message.slice(0, -1)}!</p>
         </div>
       ) : (
         <div className="results">
