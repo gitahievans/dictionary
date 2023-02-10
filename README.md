@@ -11,18 +11,18 @@ These instructions will get you a copy of the project up and running on your loc
 <h1>Installing</h1>
 <h3>Clone the repository</h3>
 </h3>
-<p>git clone git@github.com:gitahievans/dictionary.git</p>
+<pre>git clone git@github.com:gitahievans/dictionary.git</p>
 <h3>Navigate to the project directory
 <p>cd dictionary-app</p>
 <h3>Install the dependencies</h3>
-<p>npm intall</p>
+<pre>npm intall</pre>
 <p>or</p>
-<p>yarn install</p>
+<pre>yarn install</pre>
 <h3>Start the development server
 </h3>
-<p>npm start</p>
+<pre>npm start</p>
 <p>or</p>
-<p>yarn start</p>
+<pre>yarn start</pre>
 <h4>The app will be running at http://localhost:3000</h4>
 <h1>Usage</h1>
 <p>To use the app, simply type a word in the search bar and hit the search button. You will be presented with the meanings, example of use in a sentence, synonyms, and voice pronunciations of the word.</p>
