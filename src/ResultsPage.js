@@ -1,8 +1,15 @@
 import React from "react";
 import Voice from "./Voice";
+import Meaning from "./Meaning";
 
-
-function ResultsPage({ phonetic, ourWord, example, meaning, wordData }) {
+function ResultsPage({
+  wordDetails,
+  phonetic,
+  ourWord,
+  example,
+  meaning,
+  wordData,
+}) {
   return (
     <>
       {wordData.title ? (
@@ -23,10 +30,7 @@ function ResultsPage({ phonetic, ourWord, example, meaning, wordData }) {
             ) : null}
           </div>
 
-          <div className="mean">
-            {wordData ? <span className="tags">Meaning: </span> : null}
-            <span>{meaning}</span>
-          </div>
+          <div className="mean">{wordData ? <Meaning /> : null}</div>
           <div className="eg">
             {wordData ? <span className="tags">Example: </span> : null}
             {example ? (

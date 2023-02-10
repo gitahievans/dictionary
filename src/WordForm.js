@@ -15,7 +15,6 @@ function WordForm({ onHandleUpdate }) {
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
       .then((response) => response.json())
       .then((wordData) => {
-        console.log(wordData)
         onHandleUpdate(wordData);
       });  
       setWord("");
@@ -26,9 +25,9 @@ function WordForm({ onHandleUpdate }) {
     <form className="form" onSubmit={handleSubmit}>
       <TextField
         className="sbar"
+        value={word}
         id="outlined-basic"
         type="text"
-        value={word}
         onChange={handleSearch}
       />
       <Button color="primary" variant="contained" type="submit">
