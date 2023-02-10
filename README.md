@@ -11,9 +11,9 @@ These instructions will get you a copy of the project up and running on your loc
 <h1>Installing</h1>
 <h3>Clone the repository</h3>
 </h3>
-<pre>git clone git@github.com:gitahievans/dictionary.git</p>
-<h3>Navigate to the project directory
-<p>cd dictionary-app</p>
+<pre>git clone git@github.com:gitahievans/dictionary.git</pre>
+<h3>Navigate to the project directory</h3>
+<pre>cd dictionary-app</pre>
 <h3>Install the dependencies</h3>
 <pre>npm intall</pre>
 <p>or</p>
