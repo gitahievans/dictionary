@@ -3,13 +3,13 @@ import Voice from "./Voice";
 import Meaning from "./Meaning";
 
 function ResultsPage({
-  wordDetails,
   phonetic,
   ourWord,
   example,
   meaning,
   wordData,
 }) {
+    console.log(ourWord)
   return (
     <>
       {wordData.title ? (
@@ -30,7 +30,10 @@ function ResultsPage({
             ) : null}
           </div>
 
-          <div className="mean">{wordData ? <Meaning /> : null}</div>
+          <div className="mean">
+            {wordData ? <span className="tags">Meaning: </span> : null}
+            <span>{meaning}</span>
+          </div>
           <div className="eg">
             {wordData ? <span className="tags">Example: </span> : null}
             {example ? (
